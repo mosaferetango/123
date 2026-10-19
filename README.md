@@ -20,7 +20,7 @@
 
 ## Demo Video / ویدیوی معرفی / فيديو توضيحي
 
-[![Watch the Tameshk Accounting demo](docs/demo-video/thumbnail.png)](https://youtu.be/WBRs1X_rO5k)
+[![Watch the Tameshk Accounting demo](docs/demo-video/TAMESHK_Accounting.png)](https://youtu.be/WBRs1X_rO5k)
 
 **English:** Watch the Windows application walkthrough.
 
