@@ -23,7 +23,9 @@
 [![Watch the Tameshk Accounting demo](docs/demo-video/thumbnail.png)](https://youtu.be/WBRs1X_rO5k)
 
 **English:** Watch the Windows application walkthrough.
+
 **فارسی:** برای مشاهدهٔ معرفی و امکانات نسخهٔ ویندوز کلیک کنید.
+
 **العربية:** شاهد شرح التطبيق وميزاته على Windows.
 
 <!-- Recommended: upload the video to GitHub or a video host and replace the placeholder below with a real URL. Alternatively, add a thumbnail image to docs/demo-video/ and link it to the real video. Never publish a guessed or placeholder URL as if it were live. -->
