@@ -1,18 +1,7 @@
 # Tameshk Accounting — Windows Desktop
 
-<!-- This is the single shared demo-video section. Add the real video or thumbnail here when it is ready. -->
-## Demo Video / ویدیوی معرفی / فيديو توضيحي
-
-**Demo video: coming soon.** This space is reserved for a walkthrough of selected features. The same video section serves all three language sections below, so it is intentionally shown only once.
-
-<!-- Recommended: upload the video to GitHub or a video host and replace the placeholder below with a real URL. Alternatively, add a thumbnail image to docs/demo-video/ and link it to the real video. Never publish a guessed or placeholder URL as if it were live. -->
-<!-- Example: [![Watch the Tameshk Accounting demo](docs/demo-video/thumbnail.png)](REAL_VIDEO_URL_HERE) -->
-
----
 
 # **Built with Artificial Intelligence**
-
-Tameshk Accounting is an offline-first desktop accounting application for **Windows 10 and Windows 11 (64-bit)**. This repository covers the **Windows version only**. The interface supports Persian, Arabic, and English, while user records are stored locally in the Windows user profile. This release is intended for single-device use, not built-in multi-user cloud synchronization.
 
 > [!WARNING]
 > **Warning — AI-generated software**
@@ -23,10 +12,20 @@ Tameshk Accounting is an offline-first desktop accounting application for **Wind
 
 - [Minimum System Requirements and Prerequisites](#minimum-system-requirements-and-prerequisites)
 - [Description and Features](#description-and-features)
-- [Quick Start](#quick-start)
 - [Testing and Known Limitations](#testing-and-known-limitations)
 - [Data Safety and Privacy](#data-safety-and-privacy)
 - [License and Reuse](#license-and-reuse)
+
+<!-- This is the single shared demo-video section. Add the real video or thumbnail here when it is ready. -->
+## Demo Video / ویدیوی معرفی / فيديو توضيحي
+
+**Demo video: coming soon.** This space is reserved for a walkthrough of selected features. The same video section serves all three language sections below, so it is intentionally shown only once.
+
+<!-- Recommended: upload the video to GitHub or a video host and replace the placeholder below with a real URL. Alternatively, add a thumbnail image to docs/demo-video/ and link it to the real video. Never publish a guessed or placeholder URL as if it were live. -->
+<!-- Example: [![Watch the Tameshk Accounting demo](docs/demo-video/thumbnail.png)](REAL_VIDEO_URL_HERE) -->
+
+---
+
 
 ## Minimum System Requirements and Prerequisites
 
@@ -43,7 +42,7 @@ These are practical baseline recommendations, not the result of a complete hardw
 
 ### For end users
 
-1. Download the Windows x64 setup executable from the repository's [Releases](../../releases) page, when a release asset is available.
+1. Download the Windows x64 setup executable from the repository's [Releases](../../releases) page.
 2. Run the installer and follow its prompts.
 3. Choose the interface language on first launch. You may optionally enter a profile name and image.
 4. **Node.js and NSIS are not required** to run an already-built installer.
@@ -70,15 +69,6 @@ Build outputs are written under `dist\`, including the unpacked application and,
 npx electron-builder --win dir --x64
 ```
 
-### Quick Start
-
-- A fresh profile starts without fabricated products, services, quick-barcode items, warehouses, transactions, expenses, or returns. A system “-” category may be present to represent records with no category.
-- Category selection is optional by default. It can be made mandatory under **Management → Defaults and Optional Features → Simplify the Interface**. If mandatory selection is enabled, the last remaining category cannot be deleted.
-- If a category has been used in products, services, expenses, or transactions, deleting it after confirmation removes it from future selection lists while preserving its name in historical records. Cancelling the confirmation makes no change. The system “-” category can only be deleted when another category exists.
-- The invoice-template preview shows only a blank layout; it does not inject or save fake customers, products, amounts, or transactions. The CSV template for importing products and services contains headers only, not sample rows.
-- Installing an update is designed not to delete saved data. To start with an empty profile on a previously used installation, create a new profile or, after making a backup, use the application's data-clearing tools.
-- Create a backup before entering important business data and before upgrading.
-
 ## Description and Features
 
 Tameshk Accounting is designed to manage everyday small-business records on a Windows computer.
@@ -96,7 +86,6 @@ Tameshk Accounting is designed to manage everyday small-business records on a Wi
 - **Configurable monetary precision** — monetary calculations use the configured decimal precision.
 - **Local backup and restore** — create backups and restore saved data.
 - **Offline-first operation** — core records are intended to remain on the local device.
-- **No bundled demo business records** — new profiles do not start with fabricated business transactions.
 
 ## Testing and Known Limitations
 
@@ -113,19 +102,12 @@ Automated tests do not replace manual verification of installation and uninstall
 - The software is provided without a guarantee of ongoing support or compliance with any particular regulatory requirement.
 - A SHA-256 hash can help detect accidental file changes; it is **not** a publisher signature and does not prove that a file is safe.
 
-## Scope of This Repository
-
-This repository and its release instructions cover the **Windows desktop version only**. Other platform versions are outside the scope of this page and should not be considered tested or supported here.
-
-## Contributing and Reporting Issues
-
-Bug reports, reproducible test cases, and carefully scoped improvements are welcome. When reporting an issue, include the Windows version, application version, steps to reproduce, and relevant error messages. **Do not attach real customer records, passwords, personal data, or unredacted accounting backups.**
 
 ## License and Reuse
 
 This project is distributed under the **MIT License**; see [`LICENSE`](LICENSE) for the full text. The license generally permits personal and commercial use, modification, redistribution, and inclusion in other projects, provided the copyright and license notice are retained as required by the license.
 
-The MIT License is provided without warranty and does not grant permission to use the Tameshk name, logo, or other trademarks as if they were your own. Third-party components remain subject to their own licenses. Public availability of the source does not imply that the software is secure, production-ready, or suitable for a particular business.
+Third-party components remain subject to their own licenses. Public availability of the source does not imply that the software is secure, production-ready, or suitable for a particular business.
 
 **Version:** 1.50.7  
 **Platform covered here:** Windows 10/11 x64  
@@ -135,8 +117,6 @@ The MIT License is provided without warranty and does not grant permission to us
 
 # **ساخته‌شده با هوش مصنوعی**
 
-حسابداری تمشک یک نرم‌افزار حسابداری دسکتاپ با رویکرد آفلاین‌محور برای **ویندوز ۱۰ و ویندوز ۱۱ نسخهٔ ۶۴ بیتی** است. این مخزن در حال حاضر **فقط نسخهٔ ویندوز** را پوشش می‌دهد. رابط کاربری از فارسی، عربی و انگلیسی پشتیبانی می‌کند و اطلاعات کاربر در پروفایل محلی ویندوز ذخیره می‌شوند. این نسخه برای استفاده روی یک دستگاه طراحی شده و همگام‌سازی ابری چندکاربرهٔ داخلی ندارد.
-
 > [!WARNING]
 > **هشدار — نرم‌افزار ساخته‌شده با هوش مصنوعی**
 >
@@ -145,7 +125,6 @@ The MIT License is provided without warranty and does not grant permission to us
 ## دسترسی سریع
 
 - [حداقل سیستم مورد نیاز و پیش‌نیازها](#حداقل-سیستم-مورد-نیاز-و-پیشنیازها)
-- [شروع سریع](#شروع-سریع)
 - [توضیحات و قابلیت‌ها](#توضیحات-و-قابلیت‌ها)
 - [آزمون‌ها و محدودیت‌های شناخته‌شده](#آزمونها-و-محدودیتهای-شناختهشده)
 - [ایمنی داده‌ها و حریم خصوصی](#ایمنی-دادهها-و-حریم-خصوصی)
@@ -193,15 +172,6 @@ npm run dist:win
 npx electron-builder --win dir --x64
 ```
 
-## شروع سریع
-
-- پروفایل تازه بدون کالا، خدمات، موارد بارکد سریع، انبار، تراکنش، هزینه یا مرجوعی ساختگی آغاز می‌شود. ممکن است دستهٔ سیستمی «-» برای نمایش رکوردهای بدون دسته وجود داشته باشد.
-- انتخاب دسته به‌صورت پیش‌فرض اختیاری است. از مسیر **مدیریت ← پیش‌فرض‌ها و قابلیت‌های اختیاری ← ساده‌سازی محیط** می‌توان اجباری‌بودن آن را فعال کرد. در این حالت حذف آخرین دستهٔ باقی‌مانده مجاز نیست.
-- اگر دسته‌ای در کالا، خدمت، هزینه یا تراکنش استفاده شده باشد، حذف آن پس از تأیید، دسته را از فهرست انتخاب‌های آینده خارج می‌کند اما نام آن در سوابق تاریخی حفظ می‌شود. انصراف از تأیید تغییری ایجاد نمی‌کند. دستهٔ سیستمی «-» تنها زمانی قابل حذف است که دستهٔ دیگری وجود داشته باشد.
-- پیش‌نمایش قالب فاکتور فقط چیدمان یک برگهٔ خالی را نشان می‌دهد و اطلاعات ساختگی مشتری، کالا، مبلغ یا تراکنش را وارد یا ذخیره نمی‌کند. قالب CSV ورود کالا و خدمات نیز فقط سرستون دارد و ردیف نمونه ندارد.
-- طراحی نصب نسخهٔ جدید به‌گونه‌ای است که اطلاعات ذخیره‌شده را پاک نکند. برای شروع خالی در نصب قبلی، پروفایل جدید بسازید یا پس از تهیهٔ پشتیبان از ابزار پاک‌سازی داده‌ها استفاده کنید.
-- پیش از واردکردن اطلاعات مهم و پیش از ارتقا، پشتیبان تهیه کنید.
-
 ## توضیحات و قابلیت‌ها
 
 حسابداری تمشک برای مدیریت سوابق روزمرهٔ کسب‌وکارهای کوچک روی رایانهٔ ویندوزی طراحی شده است.
@@ -219,7 +189,6 @@ npx electron-builder --win dir --x64
 - **دقت اعشاری قابل تنظیم مبالغ** — محاسبات پولی با دقت اعشاری تنظیم‌شده انجام می‌شوند.
 - **پشتیبان‌گیری و بازیابی محلی** — تهیه و بازیابی نسخهٔ پشتیبان.
 - **کارکرد آفلاین‌محور** — اطلاعات اصلی برای نگهداری روی دستگاه محلی طراحی شده‌اند.
-- **بدون اطلاعات تجاری نمایشی** — پروفایل تازه با تراکنش‌های ساختگی آغاز نمی‌شود.
 
 ## آزمون‌ها و محدودیت‌های شناخته‌شده
 
@@ -236,19 +205,12 @@ npx electron-builder --win dir --x64
 - پشتیبانی مداوم یا انطباق با مقررات خاصی تضمین نشده است.
 - هش SHA-256 می‌تواند به تشخیص تغییر ناخواستهٔ فایل کمک کند؛ اما **امضای ناشر نیست** و ایمن‌بودن فایل را ثابت نمی‌کند.
 
-## محدودهٔ این مخزن
-
-این مخزن و دستورالعمل‌های انتشار آن **فقط نسخهٔ دسکتاپ ویندوز** را پوشش می‌دهند. نسخه‌های دیگر خارج از محدودهٔ این صفحه هستند و نباید آن‌ها را در این مخزن آزمایش‌شده یا پشتیبانی‌شده تلقی کرد.
-
-## مشارکت و گزارش ایراد
-
-گزارش باگ، مراحل بازتولید قابل تکرار و بهبودهای محدود و مشخص استقبال می‌شوند. هنگام گزارش، نسخهٔ ویندوز، نسخهٔ برنامه، مراحل بازتولید و پیام‌های خطای مرتبط را ذکر کنید. **اطلاعات واقعی مشتریان، گذرواژه‌ها، داده‌های شخصی یا فایل پشتیبان حسابداری بدون حذف اطلاعات حساس را پیوست نکنید.**
 
 ## مجوز و استفادهٔ مجدد
 
 این پروژه تحت **مجوز MIT** منتشر شده است؛ متن کامل در فایل [`LICENSE`](LICENSE) قرار دارد. این مجوز به‌طور کلی استفادهٔ شخصی و تجاری، تغییر، بازتوزیع و ادغام کد در پروژه‌های دیگر را مجاز می‌داند؛ مشروط بر حفظ اعلان حق‌نشر و متن مجوز مطابق شرایط آن.
 
-مجوز MIT بدون ضمانت ارائه می‌شود و به‌تنهایی اجازهٔ استفاده از نام، لوگو یا سایر علائم تجاری تمشک را به‌عنوان دارایی خودتان نمی‌دهد. اجزای شخص ثالث تابع مجوزهای خود هستند. عمومی‌بودن سورس به معنی امن‌بودن، آماده‌بودن برای محیط عملیاتی یا مناسب‌بودن برای هر کسب‌وکار نیست.
+اجزای شخص ثالث تابع مجوزهای خود هستند. عمومی‌بودن سورس به معنی امن‌بودن، آماده‌بودن برای محیط عملیاتی یا مناسب‌بودن برای هر کسب‌وکار نیست.
 
 **نسخه:** 1.50.7  
 **پلتفرم تحت پوشش:** Windows 10/11 x64  
@@ -258,7 +220,6 @@ npx electron-builder --win dir --x64
 
 # **تمشک — برنامج محاسبة مطوّر بمساعدة الذكاء الاصطناعي**
 
-تمشک هو تطبيق محاسبة مكتبي يعتمد على العمل المحلي أولاً، ومخصص لنظامي **Windows 10 وWindows 11 بإصدار 64 بت**. يغطي هذا المستودع **إصدار Windows فقط**. تدعم الواجهة اللغات الفارسية والعربية والإنجليزية، وتُحفظ بيانات المستخدم محلياً ضمن ملف تعريف مستخدم Windows. صُمّم هذا الإصدار للاستخدام على جهاز واحد، ولا يوفر مزامنة سحابية مدمجة لعدة مستخدمين.
 
 > [!WARNING]
 > **تحذير — برنامج طُوّر بمساعدة الذكاء الاصطناعي**
@@ -268,7 +229,6 @@ npx electron-builder --win dir --x64
 ## روابط سريعة
 
 - [الحد الأدنى لمتطلبات النظام والمتطلبات المسبقة](#الحد-الأدنى-لمتطلبات-النظام-والمتطلبات-المسبقة)
-- [البدء السريع](#البدء-السريع)
 - [الوصف والميزات](#الوصف-والميزات)
 - [الاختبارات والقيود المعروفة](#الاختبارات-والقيود-المعروفة)
 - [سلامة البيانات والخصوصية](#سلامة-البيانات-والخصوصية)
@@ -316,14 +276,6 @@ npm run dist:win
 npx electron-builder --win dir --x64
 ```
 
-## البدء السريع
-
-- يبدأ ملف التعريف الجديد دون منتجات أو خدمات أو عناصر باركود سريع أو مستودعات أو معاملات أو مصروفات أو مرتجعات تجريبية مصطنعة. قد توجد فئة نظام باسم «-» لتمثيل السجلات غير المصنفة.
-- اختيار الفئة اختياري افتراضياً. يمكن جعله إلزامياً من **الإدارة ← الإعدادات الافتراضية والميزات الاختيارية ← تبسيط الواجهة**. عند تفعيل الإلزام، لا يمكن حذف آخر فئة متبقية.
-- إذا استُخدمت فئة في منتج أو خدمة أو مصروف أو معاملة، فإن حذفها بعد التأكيد يزيلها من قوائم الاختيار المستقبلية مع الاحتفاظ باسمها في السجلات التاريخية. إلغاء التأكيد لا يغيّر شيئاً. ولا يمكن حذف فئة النظام «-» إلا عند وجود فئة أخرى.
-- تعرض معاينة قالب الفاتورة تخطيط صفحة فارغة فقط؛ ولا تُضاف إليها بيانات عملاء أو منتجات أو مبالغ أو معاملات وهمية ولا تُحفظ في السجلات. يحتوي قالب CSV لاستيراد المنتجات والخدمات على عناوين الأعمدة فقط دون صفوف نموذجية.
-- صُمّم تحديث البرنامج بحيث لا يمحو البيانات المحفوظة. للبدء ببيانات فارغة في تثبيت مستخدم سابقاً، أنشئ ملف تعريف جديداً أو استخدم أدوات مسح البيانات بعد أخذ نسخة احتياطية.
-- أنشئ نسخة احتياطية قبل إدخال بيانات تجارية مهمة وقبل الترقية.
 
 ## الوصف والميزات
 
@@ -342,7 +294,6 @@ npx electron-builder --win dir --x64
 - **دقة عشرية قابلة للضبط للمبالغ** — تُجرى الحسابات النقدية وفق الدقة العشرية المضبوطة.
 - **نسخ احتياطي واستعادة محليان** — إنشاء النسخ الاحتياطية واستعادة البيانات المحفوظة.
 - **العمل المحلي أولاً** — صُمّمت السجلات الأساسية لتبقى على الجهاز المحلي.
-- **لا توجد سجلات تجارية تجريبية مضمّنة** — لا يبدأ ملف التعريف الجديد بمعاملات تجارية وهمية.
 
 ## الاختبارات والقيود المعروفة
 
@@ -359,19 +310,12 @@ npx electron-builder --win dir --x64
 - لا يوجد ضمان لاستمرار الدعم أو للامتثال لمتطلبات تنظيمية محددة.
 - يساعد تجزئة SHA-256 في اكتشاف التغييرات غير المقصودة في الملف، لكنها **ليست توقيعاً للناشر** ولا تثبت أن الملف آمن.
 
-## نطاق هذا المستودع
-
-يغطي هذا المستودع وتعليمات الإصدار **نسخة Windows المكتبية فقط**. أما إصدارات المنصات الأخرى فهي خارج نطاق هذه الصفحة، ولا ينبغي اعتبارها مختبرة أو مدعومة هنا.
-
-## المساهمة والإبلاغ عن المشكلات
-
-نرحب بالإبلاغ عن الأخطاء وحالات الاختبار القابلة لإعادة الإنتاج والتحسينات المحددة النطاق. عند الإبلاغ، اذكر إصدار Windows وإصدار التطبيق وخطوات إعادة المشكلة ورسائل الخطأ ذات الصلة. **لا ترفق سجلات عملاء حقيقية أو كلمات مرور أو بيانات شخصية أو نسخاً احتياطية محاسبية غير منقحة.**
 
 ## الترخيص وإعادة الاستخدام
 
 يُوزّع هذا المشروع بموجب **رخصة MIT**؛ راجع الملف [`LICENSE`](LICENSE) للنص الكامل. تسمح الرخصة عموماً بالاستخدام الشخصي والتجاري والتعديل وإعادة التوزيع ودمج الكود في مشاريع أخرى، شريطة الاحتفاظ بإشعار حقوق النشر ونص الترخيص وفقاً لشروط الرخصة.
 
-تُقدّم رخصة MIT دون ضمان، ولا تمنح وحدها إذناً باستخدام اسم تمشک أو شعاره أو علاماته التجارية الأخرى كما لو كانت ملكاً لك. وتظل المكونات الخارجية خاضعة لتراخيصها الخاصة. إن إتاحة المصدر علناً لا تعني أن البرنامج آمن أو جاهز للاستخدام الإنتاجي أو مناسب لكل نشاط تجاري.
+وتظل المكونات الخارجية خاضعة لتراخيصها الخاصة. إن إتاحة المصدر علناً لا تعني أن البرنامج آمن أو جاهز للاستخدام الإنتاجي أو مناسب لكل نشاط تجاري.
 
 **الإصدار:** 1.50.7  
 **المنصة المشمولة:** Windows 10/11 x64  
